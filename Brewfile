@@ -1,6 +1,7 @@
 cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
+tap 'caskroom/fonts'
 
 brew 'bash'
 brew 'bash-completion2'
@@ -17,3 +18,4 @@ cask 'google-chrome'
 cask 'firefox'
 # cask 'slack'
 cask 'vlc'
+cask 'font-source-code-pro'
