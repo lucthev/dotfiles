@@ -3,6 +3,7 @@ cask_args appdir: '/Applications'
 tap 'homebrew/bundle'
 
 brew 'bash'
+brew 'bash-completion2'
 brew 'git'
 brew 'hub'
 brew 'node'
