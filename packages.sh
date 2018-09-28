@@ -6,3 +6,6 @@ if [[ $? -ne 0 ]]; then
 fi
 
 brew bundle
+
+# `npm` installed by brew in previous step
+npm i -g git-open

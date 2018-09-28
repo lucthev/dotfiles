@@ -6,10 +6,10 @@ function doIt() {
 	rsync --exclude ".git/" \
 		--exclude "init/" \
 		--exclude ".DS_Store" \
-		--exclude ".osx" \
+		--exclude ".macos" \
 		--exclude "bootstrap.sh" \
 		--exclude "Brewfile" \
-		--exclude "brew.sh" \
+		--exclude "packages.sh" \
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;
