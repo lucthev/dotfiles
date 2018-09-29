@@ -329,8 +329,7 @@ defaults write com.apple.commerce AutoUpdate -bool true
 ###############################################################################
 
 # Install Sublime Text settings
-cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings 2> /dev/null
-cp -r init/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Package\ Control.sublime-settings 2> /dev/null
+cp init/*.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 
 # Restart affected apps
 for app in "Activity Monitor" \
