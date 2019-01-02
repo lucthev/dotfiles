@@ -17,3 +17,6 @@ export LC_ALL='en_GB.UTF-8';
 
 # Don’t clear the screen after quitting a manual page.
 export MANPAGER='less -X';
+
+# Prompt
+export PS1='\W ❯ '
