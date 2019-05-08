@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+# col <i>
+# Get the ith column of each line from stdin (1-indexed)
+
+col = ARGV[0].to_i
+if col <= 0
+  program_name = File.basename($0)
+  puts "Usage: #{program_name} <num>"
+  exit 1
+end
+
+STDIN.each_line do |line|
+  parts = line.split(/\s+/)
+  puts parts[col - 1]
+end
