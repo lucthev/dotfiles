@@ -20,3 +20,6 @@ export MANPAGER='less -X';
 
 # Prompt
 export PS1='\W ❯ '
+
+# NVM config
+export NVM_DIR="$HOME/.nvm"

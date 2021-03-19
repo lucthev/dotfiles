@@ -1,0 +1,6 @@
+#!/bin/bash
+
+BRANCH=$(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@')
+
+git fetch origin "$BRANCH:$BRANCH"
+git rebase $BRANCH
