@@ -97,3 +97,9 @@ alias path='echo -e ${PATH//:/\\n}'
 
 # Serve files from the current directory over HTTP
 alias server='python -m SimpleHTTPServer 8000'
+
+# Dev env shortcuts
+alias dc='docker-compose'
+alias docker-reset='docker system prune -af; docker volume rm $(docker volume ls -q | grep -v stackadapt_db-data)'
+alias rake='bin/rake'
+alias rspec='bundle exec rspec'
