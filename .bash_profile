@@ -30,8 +30,8 @@ elif [ -f /etc/bash_completion ]; then
 fi;
 
 # Enable tab completion for `g` by marking it as an alias for `git`
-if type _git &> /dev/null && [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
-	complete -o default -o nospace -F _git g;
+if type __git_complete &> /dev/null; then
+  __git_complete g git;
 fi;
 
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards

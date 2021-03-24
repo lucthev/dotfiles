@@ -7,7 +7,9 @@ brew 'bash'
 brew 'bash-completion2'
 brew 'git'
 brew 'go'
-brew 'hub'
+# `hub` causes git completion to stop working; see
+# https://github.com/github/hub/issues/2684
+# brew 'hub'
 brew 'nvm'
 brew 'chruby'
 brew 'ruby-install'
